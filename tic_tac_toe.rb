@@ -85,8 +85,6 @@ module TicTacToe
       <<~HEREDOC
 
         ---------
-          Rounds: #{@rounds_left} of #{@rounds}
-
           Current player: #{@current_player.name}
             Marker: #{@current_player.marker}
 
@@ -102,6 +100,8 @@ module TicTacToe
 
             #{@player1.name}: #{@player1.points}  |  #{@player2.name}: #{@player2.points}
             #{"\n#{@message}\n" unless @message.nil?}
+        ---------
+          Rounds: #{@rounds_left} of #{@rounds}
         ---------
 
       HEREDOC
